@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+set -xe
 
 git_url="https://github.com/thebiblelover7/mac-playbook"
 
@@ -8,6 +8,10 @@ cd /tmp
 
 # Install command-line utilities
 xcode-select --install
+
+# Wait for installation to finish
+echo "Press enter when ready:"
+read ready
 
 # Adding python bin paths to $PATH
 ls -1 $HOME/Library/Python/ | while read python_bins
