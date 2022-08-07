@@ -29,6 +29,9 @@ done
 export PATH="/opt/homebrew/bin:$PATH"
 
 # Clone git repo with the playbook
+set +e
+rm -r mac-playbook
+set -e
 git clone $git_url mac-playbook
 cd mac-playbook
 
