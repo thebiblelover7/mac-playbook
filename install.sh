@@ -19,11 +19,8 @@ set -e
 sudo pip3 install --upgrade pip
 pip3 install ansible
 
-# Adding python bin paths to $PATH
-export PATH="$HOME/Library/Python/3.8/bin:$PATH"
-
-# Add homebrew bin path to $PATH
-export PATH="/opt/homebrew/bin:$PATH"
+# Adding python and homebrew bin paths to $PATH
+export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
 
 # Clone git repo with the playbook
 set +e
