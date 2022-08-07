@@ -10,7 +10,7 @@ cd /tmp
 xcode-select --install
 
 # Wait for installation to finish
-echo "Press enter when ready:"
+echo "Press enter when xcode command line utilities are installed:"
 read ready
 
 # Adding python bin paths to $PATH
