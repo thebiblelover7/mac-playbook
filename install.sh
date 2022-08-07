@@ -31,4 +31,8 @@ cd mac-playbook
 
 # Install deps and run the playbook
 ansible-galaxy install -r requirements.yml
+set +e
 ansible-playbook main.yml --ask-become-pass
+
+echo 'run this command: "ansible-playbook main.yml --ask-become-pass"'
+zsh
