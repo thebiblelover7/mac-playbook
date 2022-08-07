@@ -20,10 +20,7 @@ sudo pip3 install --upgrade pip
 pip3 install ansible
 
 # Adding python bin paths to $PATH
-ls -1 $HOME/Library/Python/ | while read python_bins
-do
-    export PATH="$HOME/Library/Python/$python_bins/bin:$PATH"
-done
+export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 
 # Add homebrew bin path to $PATH
 export PATH="/opt/homebrew/bin:$PATH"
