@@ -33,19 +33,19 @@ dockitems_remove:
 dockitems_persist:
   - name: "Firefox"
     path: "/Applications/Firefox.app/"
-    pos: 2
+    pos: 1
   - name: "iTerm 2"
     path: "/Applications/iTerm.app"
-    pos: 3
+    pos: 2
   - name: "Logseq"
     path: "/Applications/Logseq.app"
-    pos: 4
+    pos: 3
   - name: "Element"
     path: "/Applications/Element.app"
-    pos: 5
+    pos: 4
   - name: "mpv"
     path: "/Applications/mpv.app"
-    pos: 6
+    pos: 5
 
 configure_sudoers: false
 sudoers_custom_config: ''
