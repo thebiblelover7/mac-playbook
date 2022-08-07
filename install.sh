@@ -29,6 +29,9 @@ set -e
 git clone $git_url mac-playbook
 cd mac-playbook
 
+# Pre-playbook things
+mkdir -p $HOME/.config
+
 # Install deps and run the playbook
 ansible-galaxy install -r requirements.yml
 set +e
